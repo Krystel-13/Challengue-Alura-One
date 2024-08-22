@@ -1,0 +1,441 @@
+.icono {
+    width: 24px; /* Ajusta el tamaño de los íconos */
+    height: 24px;
+    margin-right: 10px; /* Espacio entre íconos si es necesario */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+/*-------------
+Fuentes
+--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:&display=swap');
+
+/*-------------
+Global
+--------------*/
+:root{
+    --Font: #ESESES;
+    --White: #FFFFFF;
+    --Dark-Blue: #0A3871;
+    --Grey: #C5C5C5;
+    --Medium-Grey:#67808E;
+    --RGBA:rgba(0,0,0,0.08);
+    --Medium-purple: #757FB2;
+    --White-Blue: #D8DFE8;
+    --Medium-Blue: #0a38718a;
+    --Gray: #343A40;
+    --Gree: #495057;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background: transparent;
+}
+
+::selection{
+    background: var(--Dark-Blue);
+    color: var(--Medium-purple);
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Estilo para el logo con fondo */
+header {
+    position: absolute;
+    margin: 60px 0px 0px 40px;
+    border: 0px solid var(--Dark-Blue);
+    background: transparent;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background: url('img/portada 2.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+
+.encriptador{
+    width: 60%;
+    margin: 10% 5px 180px 140px;
+    background: transparent;
+}
+
+.encriptar{
+    width: 660px;
+    height: 400px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 60px;
+    outline: none;
+    border: 3px solid var(--Dark-Blue);
+    border-radius: 15px;
+    resize: none;
+    background: var(--White);
+    
+}
+
+.encriptar::placeholder,:focus{
+    color: var(--Dark-Blue);
+}
+
+.encriptador-aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 600px;
+    background: transparent;
+}
+
+.text-aviso{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--Medium-Grey);
+    background: transparent;
+}
+
+.encriptador-contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 620px;
+    background: transparent;
+}
+
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--White);
+    background: var(--Dark-Blue);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA);
+}
+
+.btn-encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--Font);
+    inset: -3px -4px 8px var(--Dark-Blue);
+    color: var(--White-Blue);
+}
+
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Dark-Blue);
+    background: var(--White-Blue);
+    border: 3px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA);
+    
+}
+.btn-copiar:active{
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue);
+    color: var(--Medium-Blue);
+}
+.btn-desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--Dark-Blue);
+    inset: -3px -4px 8px var(--Font);
+    color: var(--Medium-Blue);
+}
+
+.tarjeta{
+    width: 300px;
+    height: 580;
+    background: var(--White);
+    box-shadow: 10px 24px 32px -8px var(--Gray);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+    border: 3px solid var(--Dark-Blue);
+    
+}
+
+.tarjeta-contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--White);
+}
+
+.img-contenedor{
+    background: var(--Font);
+}
+
+.text-uno{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 180px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Gree);
+    background: var(--Font);
+}
+
+.text-dos{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Gree);
+    background: var(--Gree);
+}
+
+.evaluar{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Gree);
+    background: transparent;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus{
+    outline: none;
+    
+}
+
+.btn-copiar{
+    width: 250px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*visibility: hidden;*/
+    padding: 24px;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+    background: var(--White-Blue);
+    border: 3px solid var(--Dark-Blue);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover{
+    transform: scale(0.97);
+}
+/*pie de página */
+footer{
+    margin-top: 0px;
+    padding: 60px;
+    border-top: 1px solid var(--Font);
+    color: var(--Gray);
+    text-align: center;
+    height: 10px;
+    font-size: 20px;
+    font-weight: 7;
+    color: var(--Gray);
+    background: var(--White);
+}
+
+.linked:hover{
+    color: var(--Font);
+    opacity: 0.8;
+    background: transparent;
+}
+
+.git:hover{
+    color: var(--Font);
+    opacity: 0.6;
+    background: transparent;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*media*/
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador-contenedor{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encriptador-aviso{
+        position: inherit;
+        margin: 15px;
+    }
+
+    .tarjeta{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .tarjeta-contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 40%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img-contenedor {
+        display: none;  /* Oculta la imagen para pantallas más pequeñas como antes */
+    }
+
+    .btn-copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+/* Ajustes para el logo en pantallas pequeñas */
+@media(max-width: 720px){
+    header {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        width: 100%;
+        height: 60px; /* Ajusta la altura según sea necesario */
+        background: var(--White);
+        padding: 2px;
+        position: relative; /* Necesario para centrar contenido absoluto si es necesario */
+        margin: 0; /* Elimina márgenes que puedan afectar el centrado */
+    }
+
+    header .logo {
+        width: auto; /* Ajusta el ancho del logo según el contenido */
+        max-width: 100%; /* Asegura que el logo no se expanda más allá del contenedor */
+    }
+
+    main {
+        margin-top: 10px; /* Reduce el espacio encima del main para estar más cerca del header */
+    }
+
+    .encriptador {
+        width: 90%;
+        margin: 10px auto; /* Reduce el margen alrededor del contenedor encriptador */
+        padding: 10px; /* Ajusta el padding si es necesario */
+    }
+
+    .encriptar {
+        width: 100%; /* Ajusta el ancho para que se ajuste al contenedor */
+        font-size: 24px;
+    }
+
+    .encriptador-contenedor {
+        display: grid;
+        gap: 15px; /* Reduce el espacio entre botones */
+    }
+
+    .tarjeta {
+        width: 90%;
+        margin: 10px auto; /* Reduce el margen alrededor de la tarjeta */
+    }
+
+    .copyright {
+        font-size: 20px;
+        margin-top: -30px; /* Reduce el espacio encima del footer */
+    }
+}
+
+
+
+
+
+

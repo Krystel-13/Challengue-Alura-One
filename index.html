@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="img/Logo.png" type="image/png"/>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img src="img/Log2.png" alt="Logo Alura" class="Logo">
+        </a>
+    </header>
+
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador-aviso">
+                <img src="img/Vector.png" alt="Imagen Aviso" class="img-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <button type="submit" class="btn-encriptar">ENCRIPTAR!</button>
+                <button type="submit" class="btn-desencriptar">DESENCRIPTAR!</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img src="img/Muñeco.png" alt="Imagen Muñeco" class="img-contenedor">
+                <p class="texto-uno">Ningún texto fue encontrado.</p>
+                <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; copyright 2024 / Encriptador de Texto / Desarrollado por Krystel</p>
+        <a href="#" rel="">
+            <img src="img/lin.png" alt="Logo Linkedin" class="icono linked">
+        </a>
+        <a href="#" rel="">
+            <img src="img/git.png" alt="Logo Github" class="icono git">
+        </a>
+    </footer>
+    <!-- Modal para mensaje de éxito -->
+<div id="mensaje-exito-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-exito-modal" class="close-button">&times;</span>
+        <p>😊 La palabra ha sido ENCRIPTADA correctamente!</p>
+    </div>
+</div>
+
+<!-- Modal para mensaje de error -->
+<div id="mensaje-error-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-error-modal" class="close-button">&times;</span>
+        <p>😢 No ha sido encriptado correctamente. Asegúrate de que el texto esté en minúsculas y sin acentos.</p>
+    </div>
+</div>
+
+<!-- Modal para mensaje de desencriptado -->
+<div id="mensaje-desencriptado-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-desencriptado-modal" class="close-button">&times;</span>
+        <p>😊 La palabra ha sido DESENCRIPTADA correctamente!</p>
+    </div>
+</div>
+    <script src="encriptador.js"></script>
+</body>
+</html>
